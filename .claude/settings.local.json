@@ -1,0 +1,28 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:api.anthropic.com)",
+      "Read(//c/Users/ASUS/Documents/**)",
+      "Bash(npx create-expo-app@latest snap-cal --template blank)",
+      "Bash(Remove-Item -Recurse -Force snap-cal\\\\*.html, snap-cal\\\\*.jsx, snap-cal\\\\*.json -ErrorAction SilentlyContinue)",
+      "Bash(npx create-expo-app@latest snap-cal --template blank --yes)",
+      "Bash(rm -f *.html *.jsx)",
+      "Read(//c/c/Users/ASUS/Documents/**)",
+      "Bash(mkdir -p snap-cal-new)",
+      "Bash(npx create-expo-app@latest snap-cal-new --template blank)",
+      "Bash(cp -r \"/c/Users/ASUS/Documents/snap-cal-new/.\" \"/c/Users/ASUS/Documents/snap-cal/\")",
+      "Bash(rm -rf \"/c/Users/ASUS/Documents/snap-cal-new\")",
+      "Bash(cp snap-cal-new/App.js snap-cal/)",
+      "Bash(cp snap-cal-new/app.json snap-cal/)",
+      "Bash(cp snap-cal-new/package.json snap-cal/)",
+      "Bash(cp snap-cal-new/index.js snap-cal/)",
+      "Bash(cp -r snap-cal-new/assets snap-cal/)",
+      "Bash(npm install *)",
+      "PowerShell(cd \"C:\\\\Users\\\\ASUS\\\\Documents\\\\snap-cal\"; $env:CI = \"1\"; npx expo start 2>&1 | Select-Object -First 25)",
+      "PowerShell(cd \"C:\\\\Users\\\\ASUS\\\\Documents\\\\snap-cal\"; $env:CI = \"1\"; npx expo start --port 8082 2>&1 | Select-Object -First 20)",
+      "PowerShell(cd \"C:\\\\Users\\\\ASUS\\\\Documents\\\\snap-cal\"; $env:CI = \"1\"; npx expo start --port 8083 2>&1 | Select-Object -First 15)",
+      "PowerShell(Get-Process *)",
+      "PowerShell(cd \"C:\\\\Users\\\\ASUS\\\\Documents\\\\snap-cal\"; $env:CI = \"1\"; npx expo start 2>&1 | Select-Object -First 20)"
+    ]
+  }
+}
